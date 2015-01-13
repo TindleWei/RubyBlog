@@ -8,7 +8,9 @@ Blog::Application.routes.draw do
   root :to => "home#index"
 
 # Rails.application.routes.draw do
-  resources :posts
+  # resources :posts do
+  resources :comments
+end
 
 #   get 'home/index'
 
@@ -66,4 +68,4 @@ Blog::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+# end
